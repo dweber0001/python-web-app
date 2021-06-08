@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def create_app():
-    app = Flask(__name__) 
+    app = Flask(__name__)
     client = MongoClient(os.environ.get("MONGODB_URI"))
     app.db = client.microblog
     
@@ -40,4 +40,3 @@ def create_app():
     def howMade_template():
         
         return render_template('howMade.html')
-    app.run()
