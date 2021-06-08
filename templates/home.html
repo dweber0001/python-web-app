@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microblog</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+
+<body class = "body">
+    <header class="navbar">
+        <div class="navbar__brand">
+            <img src="/static/logo.svg" alt="The Microblog logo" />&nbsp; Microblog
+        </div>
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation-item">
+                <a href="#" class="navbar__link">Recent</a>
+            </li>
+            
+        </ul>
+    </header>
+    <main class="main">
+        <section>
+            <h1>Add new entry</h1>
+            <form class="form" method="POST">
+                <p class="form__input">
+                    <!-- <label for="entry" class="form__label">Entry contents</label>  
+                    This prints Entry contents above the message box.
+                    I am removing this and writing aria-label="Entry contents" in textarea for screenreaders, etc., 
+                    because I think it looks better without this heading-->
+
+                    <textarea name="content" id="entry" class="form__textarea" aria-label="Entry contents"></textarea>
+                </p>
+                <button type="submit" class="form__submit">Add entry</button>
+            </form>
+        </section>
+        <section>
+            <h1>Recent posts</h1>
+            {% for entry in entries %}
+            <article class="entry">
+                <div>
+                    <h2 class="entry__title">{{ entry[0] | truncate(30, true) }}</h2>
+                    <time class="entry__date" datetime="{{ entry[1] }}">♦ {{ entry[2] }}</time>
+                </div>
+                <p class="entry__content">
+                    {{ entry[0] }}
+                </p>
+            </article>
+            {% endfor %}
+        </section>
+    </main>
+
+    <body>
+		<h3>{{ title }}</h3>
+		{% for p in paragraph %}
+		<p>{{ p }}</p>
+		{% endfor %}
+		
+		{% block body %}
+		{% endblock %}
+		
+	</body>
+
+
+    <footer class="footer">
+        <div class="footer__content">
+            <section class="left">
+                <a class="footer__item">Made by Denise Weber</a>
+                <a class="footer__item"></a>
+                <a href="#"><span style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;">Recent</span></a>
+                
+            </section>
+            <section class="right">
+                <div class="footer__column">
+                    <a class="footer__item">
+                        <ul>
+                            <li style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;"><a href="/about">About</li></a>
+                            <li style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;"><a href="/howMade">How app was made</a></li>
+                        </ul>
+                       
+                       
+                </div>
+                <div class="footer__column">
+                
+                        <a class="footer__item"></a><a href="https://yourdoctorsoffice2021.azurewebsites.net" target="_blank"><span style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;">Check out my other projects</span></a>
+
+                 
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
