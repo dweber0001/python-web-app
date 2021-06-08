@@ -40,3 +40,4 @@ def create_app():
     def howMade_template():
         
         return render_template('howMade.html')
+    app.run()
