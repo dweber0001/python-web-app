@@ -32,11 +32,11 @@ def create_app():
     return app
 
     @app.route('/about')
-    def about_template():
+    def about():
         
         return render_template('about.html')
 
     @app.route('/howMade')
-    def howMade_template():
+    def howMade():
         
         return render_template('howMade.html')
