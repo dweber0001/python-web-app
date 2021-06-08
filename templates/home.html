@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/static/css/styles.css" />
 </head>
 
-<body class = "body">
+<body>
     <header class="navbar">
         <div class="navbar__brand">
             <img src="/static/logo.svg" alt="The Microblog logo" />&nbsp; Microblog
@@ -51,33 +51,25 @@
         </section>
     </main>
 
-    <body>
-	{% block content %}
-
-        {% endblock %}
-		
-	</body>
-
-
     <footer class="footer">
         <div class="footer__content">
             <section class="left">
-                <a class="footer__item">Made by Denise Weber</a>
+                <a class="footer__item">Denise Weber &copy; 2021</a>
                 <a class="footer__item"></a>
-                <a href="#"><span style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;">Recent</span></a>
-                
+                <a href="{{ url_for('home') }}"><span style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;">Recent</span></a>
             </section>
             <section class="right">
                 <div class="footer__column">
-                    <a class="footer__item">
-                        <ul>
-                            <li style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;"><a href="/about">About</li></a>
-                            <li style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;"><a href="/howMade">How app was made</a></li>
-                        </ul>
+                    <a class="footer__item"></a>
+                    
+                            <a href="{{ url_for('about') }}"><span style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;">About</span></a>
+                            <a href="{{ url_for('howMade') }}"><span style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;">How app was made</span></a>
+                        
                 </div>
                 <div class="footer__column">
                 
-                        <a class="footer__item"></a><a href="https://yourdoctorsoffice2021.azurewebsites.net" target="_blank"><span style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;">Check out my other projects</span></a>
+                        <a class="footer__item"></a>
+                        <a href="https://yourdoctorsoffice2021.azurewebsites.net" target="_blank"><span style="color: white; font-weight:bold; font-size: 12px; text-decoration: underline;">Check out my other projects</span></a>
 
                  
                 </div>
