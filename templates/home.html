@@ -52,13 +52,9 @@
     </main>
 
     <body>
-		<h3>{{ title }}</h3>
-		{% for p in paragraph %}
-		<p>{{ p }}</p>
-		{% endfor %}
-		
-		{% block body %}
-		{% endblock %}
+		{% block content %}
+
+        {% endblock %}
 		
 	</body>
 
