@@ -30,13 +30,3 @@ def create_app():
         return render_template("home.html", entries=entries_with_date)
 
     return app
-
-    @app.route("/about")
-    def about():
-        
-        return render_template("about.html")
-
-    @app.route("/howMade")
-    def howMade():
-        
-        return render_template("howMade.html")
