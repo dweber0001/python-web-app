@@ -125,7 +125,7 @@ body {
 .footer__content {
     max-width: 640px;   /* size of browser */
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
     display: flex;
     flex-direction: row;
 }
@@ -157,5 +157,5 @@ body {
 }
 
 .footer__item:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
