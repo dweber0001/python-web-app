@@ -145,7 +145,7 @@ body {
 .footer__column {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .footer__item {
@@ -157,5 +157,5 @@ body {
 }
 
 .footer__item:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
