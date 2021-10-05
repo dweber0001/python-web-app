@@ -15,8 +15,8 @@ body {
 
 .navbar {
     
-    background-color: #6d8992;
-    color: #f5f6f6;
+    background-color: #747499;
+    color: white;
     margin: 0 auto 20px auto;  
     padding: 40px auto;    
     display: flex;
@@ -36,12 +36,15 @@ body {
     display: flex; 
     align-items: center;
      color: #f5f6f6;
+    font-weight: bold;
 }
 
 .navbar__logo {
-    margin-right: 30px;
+    margin-top: 30px;
+    margin-right: 50px;
     height: 72px;
     width: 62px;
+    color: #f5f6f6;
     font-weight: bold;
     
 }
@@ -69,7 +72,7 @@ body {
 .main {
     max-width: 600px;
     margin: 0 auto;
-    padding: 30px 20px 20px 20px;
+    padding: 30px;
     color: #222f3b;
     background-color: #f0f0f4;
 }
@@ -99,7 +102,7 @@ body {
 }
 
 .form__submit {
-    background-color: #00cbff;
+    background-color: #3839c7;
     border: none;
     font-size: 18px;
     font-weight: bold;
@@ -110,7 +113,7 @@ body {
 }
 
 .form__submit:hover {
-    background-color: #ff9300;
+    background-color: #c7c638;
 }
 
 .entry {
@@ -150,6 +153,7 @@ body {
 }
 
 .footer .left {
+    margin-top: 5px;
     flex-grow: 2;
     display: flex;
     flex-direction: column;
