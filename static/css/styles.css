@@ -14,19 +14,28 @@ body {
 }
 
 .navbar {
-    max-width: 640px;
+    padding: 40px 0;     
     background-color: #323f43;
+    color: #aac7d1;
     margin: 50px auto;
-    padding: 0 20px;
+  
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 24px;
 }
+.navbar_content {
+    max-width: 640px;   /* size of browser */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+}
 
 .navbar__brand {
-    display: flex;
+    /* display: flex; */
     align-items: center;
+     color: #aac7d1;
 }
 
 .navbar__logo {
@@ -34,7 +43,7 @@ body {
 }
 
 .navbar__navigation {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     padding: 0;
     list-style: none;
@@ -58,6 +67,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     color: #222f3b;
+    background-color: #f0f0f4;
 }
 
 .form {
@@ -85,7 +95,7 @@ body {
 }
 
 .form__submit {
-    background-color: #09c551;
+    background-color: #0085ff;
     border: none;
     font-size: 18px;
     font-weight: bold;
@@ -96,7 +106,7 @@ body {
 }
 
 .form__submit:hover {
-    background-color: #6fcae9;
+    background-color: #ff9300;
 }
 
 .entry {
