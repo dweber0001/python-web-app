@@ -15,10 +15,9 @@ body {
 
 .navbar {
     padding: 40px 0;     
-    background-color: #323f43;
-    color: #aac7d1;
-    margin: 50px auto;
-  
+    background-color: #6d8992;
+    color: #f5f6f6;
+    margin: 50px auto;  
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,11 +34,11 @@ body {
 .navbar__brand {
     /* display: flex; */
     align-items: center;
-     color: #aac7d1;
+     color: #f5f6f6;
 }
 
 .navbar__logo {
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .navbar__navigation {
@@ -47,7 +46,7 @@ body {
     flex-direction: row;
     padding: 0;
     list-style: none;
-    color: #aac7d1;
+    color: #f5f6f6;
     font-weight: bold;
 }
 
@@ -63,7 +62,7 @@ body {
 }
 
 .main {
-    max-width: 450px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 20px;
     color: #222f3b;
