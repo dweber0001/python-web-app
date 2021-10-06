@@ -15,9 +15,10 @@ body {
 
 .navbar {
     max-width: 640px;
+    height: 100px;
     background-color: #747499;
     color: white;
-    margin: 0 auto 20px auto;  
+    margin: 0 auto;  
     padding: 0 10px;    
     display: flex;
     flex-direction: row;
@@ -31,8 +32,8 @@ body {
 }
 
 .navbar__logo {
-    margin-top: 30px;
-    margin-right: 60px;
+    margin-top: 45px;
+    margin-right: 80px;
 }
 
 .navbar__navigation {
@@ -56,11 +57,11 @@ body {
 }
 
 .main {
-    max-width: 620px;
+    max-width: 640px;
     margin: 0 auto;
     padding: 20px 40px 20px 40px;
     color: #222f3b;
-    background-color: #f0f0f4;
+    background-color: #f2f2f6;
 }
 
 .form {
