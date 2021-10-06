@@ -14,16 +14,20 @@ body {
 }
 
 .navbar {
-    max-width: 640px;
+    max-width: 680px;
     padding: 40px 0;
     background-color: #747499;
     border-bottom: 4px solid #747499;
     color: #f5f6f6;   
     font-size: 23px;
     font-weight: 600;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .navbar_content {
+    max-width: 640px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
