@@ -17,12 +17,12 @@ body {
     max-width: 640px;
     background-color: #747499;
     color: white;
-    margin: 10px auto 20px auto;  
-    padding: 0 20px;    
+    margin: 0 auto 20px auto;  
+    padding: 0 10px;    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 23px;
 }
 
 .navbar__brand {
@@ -31,8 +31,8 @@ body {
 }
 
 .navbar__logo {
-    padding-top: 50px;
-    margin-right: 40px;
+    margin-top: 30px;
+    margin-right: 60px;
 }
 
 .navbar__navigation {
@@ -123,10 +123,10 @@ body {
 }
 
 .footer {
-    background-color: #323f43;
+    background-color: #747499;
     padding: 40px 0;    /* 40px top and bottom, 0 left and right*/
     margin-top: 20px;
-    border-top: 4px solid black;
+    border-top: 4px solid #747499;
     color: white;
     font-size: 12px;
 }
