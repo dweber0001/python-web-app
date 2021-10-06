@@ -15,45 +15,69 @@ body {
 
 .navbar {
     max-width: 640px;
-    height: 100px;
+    padding: 40px 0;
     background-color: #747499;
-    color: white;
-    margin: 0 auto;  
-    padding: 0 10px;    
+    border-bottom: 4px solid #747499;
+    color: #f5f6f6;   
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.navbar_content {
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    font-size: 23px;
 }
 
-.navbar__brand {
-    display: flex; 
-    align-items: center;
+.navbar_left {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
+.navbar_right {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;    
+}
+.navbar_column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
 .navbar__logo {
-    margin-top: 45px;
-    margin-right: 80px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.navbar_item (
+    color: #f5f6f6;
+    font-weight: 600;
+    text-decoration: none;
+)
+.navbar_item:hover{
+    color: #f5f6f6;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .navbar__navigation {
-    display: flex; 
-    flex-direction: row;
-    padding: 0;
+     padding: 0;
     list-style: none;
     color: #f5f6f6;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .navbar__navigation-item {
-    margin-left: 50px;
+    margin-left: 20px;
 
 }
 
 .navbar__link {
     text-decoration: none;
     color: inherit;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .main {
