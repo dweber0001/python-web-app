@@ -14,33 +14,34 @@ body {
 }
 
 header{
-    max-width: 680px;
-    margin: 50px auto;
+    max-width: 700px;
+    background-color: #747499;
+    margin: 0 auto 20px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 23px;
-    color: #9619ea;
+    color: white;
 }
 header .title {
     display: flex;
     align-items: center;
-    color: #9619ea;
+    color: white;
 }
 header .title img {
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 header .menu {
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #9619ea;
+    color: white;
     list-style: none;
     
 }
 header .menu .menu-item {
-    margin-left: 50px;
+    margin-left: 30px;
     text-decoration: none;
 }
 
@@ -48,12 +49,12 @@ li {
     list-style: none;
 }
 a {
-    color: #9619ea;
+    color: white;
     text-decoration: none;
 }
 
 .main {
-    max-width: 640px;
+    max-width: 680px;
     margin: 0 auto;
     padding: 20px 40px 20px 40px;
     color: #222f3b;
