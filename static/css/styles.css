@@ -13,6 +13,38 @@ body {
     margin: 0;
 }
 
+header{
+    max-width: 680px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 23px;
+}
+header .title {
+    display: flex;
+    align-items: center;
+    color: #9619ea;
+}
+header .title img {
+    margin-right: 30px;
+}
+
+header .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #9619ea;
+    list-style: none;
+    
+}
+header .menu .menu-item {
+    margin-left: 50px;
+}
+
+
+
+
 li {
     list-style: none;
 }
