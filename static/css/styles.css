@@ -33,6 +33,7 @@ header .title {
 }
 header img {
     margin-right: 40px;
+    margin-left: 0;
     text-align: left;
     padding-left: 5px;
 }
