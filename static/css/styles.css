@@ -16,8 +16,8 @@ body {
 header{
     max-width: 800px;
     background-color: #747499;
-    padding: 40px 0;
-    margin: 0 0 20px 0;
+    padding: 30px 0;
+    margin: 0 auto 20px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,20 +28,24 @@ header .title {
     display: flex;
     align-items: center;
     color: white;
+    margin-left: 10px;
+    text-align: center;
 }
-header .title img {
+header img {
     margin-right: 80px;
+    text-align: left;
 }
 
 header .menu {
     display: flex;
     flex-direction: row;
-    align-items: right;
+    align-items: center;
+    text-align: right;
     color: white;
     list-style: none;    
 }
 header .menu .menu-item {
-    margin-left: 20px;
+    margin-left: auto;
     text-decoration: none;
 }
 
